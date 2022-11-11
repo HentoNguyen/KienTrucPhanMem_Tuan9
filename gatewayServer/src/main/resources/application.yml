@@ -1,0 +1,17 @@
+server:
+  port:8081
+
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=QuanLyChuyenBay
+    password: 123
+    username: sa
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+
+  application:
+    name: GATEWAY-SERVER
